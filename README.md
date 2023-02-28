@@ -1,13 +1,3 @@
 # CSS-HTML-JS-class
 Coursera class repository
 theme: Architect
-<header class="page-header"  
-        role="banner">
-      <h1 class="project-name">Areg Sarkissian</h1>
-</header>
-<main id="content" class="main-content" role="main">
-       {{ content }}
-      <footer class="site-footer">
-        &copy; 2019 Areg Sarkissian
-      </footer>
-</main>
