@@ -4,7 +4,7 @@
 		<title>HTML is Structure Only (After)</title>
 	</head>
 	<body>
-		<h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
+		<h1 style="color: blue; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
 		<p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum. this is a paragraph about how html is only the structure and it doesn't include any color or style or transitions like css and js</p>
 		<p>a page that just consists of html will look plain and it will not be very pleasing for customers to look at. that is why we use CSS and JS.</p>
 		<footer>
