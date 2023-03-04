@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>HTML is Structure Only (After)</title>
 	</head>
 	<body>
-		<h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
-		<p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum. this is a paragraph about how html is only the structure and it doesn't include any color or style or transitions like css and js</p>
-		<p>a page that just consists of html will look plain and it will not be very pleasing for customers to look at. that is why we use CSS and JS.</p>
-		<footer>
-			<hr>
-			<p style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</p>
-		</footer>
+		<section id="top">
+			<h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
+			<p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum. this is a paragraph about how HTML is only the structure and it doesn't include any color or style or transitions like &quot;CSS and JS&quot;</p>
+			<p>a page that just consists of HTML will look plain and it will not be very pleasing for customers to look at. that is why we use CSS&nbsp;and&nbsp;JS.</p>
+			<ul>
+				<li><a href="#top">Top</a></li>
+				<li><a href="#unordered">Unordered Lists</a></li>
+				<li><a href="#ordered">Ordered Lists</a></li>
+				<li><a href="#bottom">Bottom</a></li>
+			</ul>
+			<a href="https://www.thecut.com/article/i-inherited-millions-from-my-mother-and-everyone-knows.html?utm_source=pocket-newtab" target="_blank" title="Random new site">Here is an article on money.</a>
+		</section>
+		<section id="unordered">
+			<h2>Unordered list</h2>
+			<div>
+			
+				My typical dinner shopping list:
+				<ul>
+					<li>Milk</li>
+					<li>Donuts</li>
+					<li>Cookies
+						<ul>
+							<li>Chocolate</li>
+							<li>Sugar</li>
+							<li>Peanut Butter</li>
+						</ul>
+					</li>
+					<li>Pepto Bismol</li>
+				</ul>
+			</div>
+			<p>What is shown above is an Unordered list. This is a list that doesn't need to be completed in the exact order that it is listed. ex.(You can pickup the cookies before you get the milk.) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="ordered">
+			<h2>Ordered List</h2>
+			<div>
+			
+				Making a sandwich:
+				<div></div>
+				<img src="sandwich.jpg" width="#" height="#" >
+				<ol>
+					<li>Place two pieces of bread on the counter.
+						<ol>
+							<li>Open refrigerator.</li>
+							<li>Take out bread.</li>
+							<li>Open bread.</li>
+						</ol>
+					</li>
+					<li>Open peanut butter.<div>*This can be found in the pantry.</div></li>
+					<li>Scoop peanut butter onto the first slice of bread.</li>
+					<li>Open jelly.<div>*This can be found in the refrigerator.</div></li>
+					<li>Scoop jelly onto the second slice of bread.</li>
+					<li>Put slices together.</li>
+					<li>Enjoy!!</li>
+				</ol>
+			</div>
+			<div>
+				Cleanup:
+				<ol>
+					<li>Close peanut butter.</li>
+					<li>Close jelly.</li>
+					<li>Put the peanut butter in the pantry.</li>
+					<li>Put the jelly in the refrigerator.</li>
+					<li>Wipe counter.</li>
+				</ol>
+			</div>
+			<p>What is shown above are two Ordered lists. This is a list of things that need to be completed in the exact order that it is on the list. ex.(You need to open the peanut butter before you can spread it on the bread.) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="bottom">
+			<footer>
+				<hr>
+				<p style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</p>
+				<p>If the tech support email doesn't seem to be working at the the moment try this link to go to a tech support form. This form will be automatically sent to HR to be processed.
+					<a href="another-folder.html" title="another folder">This&nbsp;page&nbsp;might&nbsp;help</a>
+				</p>
+			</footer>
+		</section>
 	</body>
 </html>
