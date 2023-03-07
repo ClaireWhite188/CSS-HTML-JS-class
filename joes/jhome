@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This page is useless (After)</title>
+	</head>
+	<body>
+		<h1 style="color: blue; font-size: 60px; text-align: center;">lol This page is also as useless as the email. ^-^</h1>
+		<footer>
+			<hr>
+			<h4 style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</h4>
+		</footer>
+	</body>
+</html>
