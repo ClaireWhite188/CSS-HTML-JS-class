@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is the media</title>
+		<style type="text/css">
+
+			/********** Base styles **********/
+			
+			h1 {
+				margin-bottom: 15px;
+			}
+
+			p {
+				border: 1px solid black;
+				margin-bottom: 15px;
+			}
+
+			#p1 {
+				background-color: #A52A2A;
+				width: 300px;
+				height: 300px;
+			}
+			#p2 {
+				background-color: #DEB887;
+				width: 50px;
+				height: 50px;
+			}
+
+			/********** Large devices only **********/
+
+			@media (min-width: 1200px) {
+				#p1 {
+					width: 80%;
+				}
+				#p2 {
+					width: 150px;
+					height: 150px;
+				}
+			}
+
+
+
+			/********** Medium devices only **********/
+
+			@media (max-width: 1199px) and (min-width: 992px) {
+				#p1 {
+					width: 50%;
+				}
+				#p2 {
+					width: 100px;
+					height: 100px;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>This is the media!</h1>
+			<p id="p1"></p>
+			<p id="p2"></p>
+
+		<a href="index.html" title="Home Page">Go&nbsp;Back</a>
+		<footer>
+			<hr>
+			<h4 style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</h4>
+		</footer>
+	</body>
+</html>

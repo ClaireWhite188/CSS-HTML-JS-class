@@ -3,6 +3,62 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML is Structure Only (After)</title>
+		<style>
+			body {
+			}
+			header li {
+				list-style: none;
+			}
+			#pseudo a:link, a:visited {
+				text-decoration: none;
+				background-color: green;
+				border: 1px solid blue;
+				color: black;
+				display: block;
+				width: 200px;
+				text-align: center;
+				margin-bottom: 1px;
+			}
+			#pseudo a:hover, a:active {
+				background-color: red;
+				color: purple;
+			}
+			header li:nth-child(3) {
+				font-size: 24px;
+			}
+
+			#table div:nth-child(odd) {
+				background-color: lightgray;
+			}
+			#table div:nth-child(4):hover {
+				background-color: green;
+				cursor: pointer;
+			}
+			#quiz div, span {
+				background-color: lightblue;
+			}
+			/*
+			section > article {
+				xxx
+			}
+			*/
+			/*
+			section article  {
+				xxx
+			}
+			*/
+			p {
+				font-size: 15px;
+				text-align: center;
+				opacity: 0.7;
+			}
+
+			h1 {
+				color: green;
+				font-size: 36px;
+				text-align: center;
+			}
+		</style>
 	</head>
 	<body>
 		<section id="top">
@@ -10,10 +66,11 @@
 			<p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum. this is a paragraph about how HTML is only the structure and it doesn't include any color or style or transitions like &quot;CSS and JS&quot;</p>
 			<p>a page that just consists of HTML will look plain and it will not be very pleasing for customers to look at. that is why we use CSS&nbsp;and&nbsp;JS.</p>
 			<ul>
-				<li><a href="#top">Top</a></li>
 				<li><a href="#unordered">Unordered Lists</a></li>
 				<li><a href="#ordered">Ordered Lists</a></li>
 				<li><a href="#bottom">Bottom</a></li>
+				<li><a href="#pseudo">Pseudo Classes</a></li>
+				<li><a href="#table">Table</a></li>
 			</ul>
 			<a href="https://www.thecut.com/article/i-inherited-millions-from-my-mother-and-everyone-knows.html?utm_source=pocket-newtab" target="_blank" title="Random new site">Here is an article on money.</a>
 		</section>
@@ -21,7 +78,7 @@
 			<h2>Unordered list</h2>
 			<div>
 			
-				My typical dinner shopping list:
+				<h4>My typical dinner shopping list:</h4>
 				<ul>
 					<li>Milk</li>
 					<li>Donuts</li>
@@ -41,7 +98,7 @@
 			<h2>Ordered List</h2>
 			<div>
 			
-				Making a sandwich:
+				<h4>Making a sandwich:</h4>
 				<div></div>
 				<img src="sandwich.jpg" width="#" height="#" >
 				<ol>
@@ -61,7 +118,7 @@
 				</ol>
 			</div>
 			<div>
-				Cleanup:
+				<h4>Cleanup:</h4>
 				<ol>
 					<li>Close peanut butter.</li>
 					<li>Close jelly.</li>
@@ -70,15 +127,55 @@
 					<li>Wipe counter.</li>
 				</ol>
 			</div>
-			<p>What is shown above are two Ordered lists. This is a list of things that need to be completed in the exact order that it is on the list. ex.(You need to open the peanut butter before you can spread it on the bread.) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>What is shown above are two Ordered lists. This is a list of things that need to be completed in the exact order that it is on the list. ex.(You need to open the peanut butter before you can spread it on the bread.) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">Back to top</a></p>
+		</section>
+		<section id="pseudo">
+			<h1>Pseudo Class Selectors</h1>
+
+			<header>
+				<ul>
+					<li><a href="home.html" title="another folder">Home</a></li>
+					<li><a href="box-models.html" title="box models">Box Models</a></li>
+					<li><a href="floating-elements.html" title="floating elements">Floating Elements</a></li>
+					<li><a href="positioning-elements.html" title="positioning elements">Positioning Elements</a></li>
+					<li><a href="media.html" title="media">Media</a></li>
+					<li><a href="responsive.html" title="resposive">Responsive</a></li>
+					<li><a href="https://github.com/ClaireWhite188/CSS-HTML-JS-class" target="_blank">Git Hub Page</a></li>
+					<li><a href="https://contradovip.com/edge/jaden/" target="_blank">Edge Homes Jaden House</a></li>
+				</ul>
+			</header>
+		</section>
+		<section id="table">
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+			<div>xxx</div>
+		</section>
+		<section id="quiz">
+			<div>Hello</div>
+			<span>World!</span>
 		</section>
 		<section id="bottom">
 			<footer>
 				<hr>
-				<p style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</p>
-				<p>If the tech support email doesn't seem to be working at the the moment try this link to go to a tech support form. This form will be automatically sent to HR to be processed.
+				<h4 style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</h4>
+				<h4>If the tech support email doesn't seem to be working at the the moment try this link to go to a tech support form. This form will be automatically sent to HR to be processed.
 					<a href="another-folder.html" title="another folder">This&nbsp;page&nbsp;might&nbsp;help</a>
-				</p>
+				</h4>
 			</footer>
 		</section>
 	</body>

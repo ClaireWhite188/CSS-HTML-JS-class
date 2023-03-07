@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Floating Elements</title>
+		<style type="text/css">
+			
+			div {
+				background-color: #00FFFF;
+			}
+			p {
+				width: 50%;
+				height: 50px;
+				border: 1px solid black;
+			}
+			#p1 {
+				background-color: #A52A2A;
+				float: left;
+				height: 200px;
+				clear: both;
+			}
+			#p2 {
+				background-color: #DEB887;
+				float: right;
+				clear: both;
+			}
+			#p3 {
+				background-color: #5F9EA0;
+				clear: both;
+			}
+			#p4 {
+				background-color: #FF7F50;
+				float: right;
+				clear: both;
+			}
+			section {
+				clear: both;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 style="color: blue; font-size: 60px; text-align: center;">Floating Elements</h1>
+
+		<div>
+			<p id="p1"></p>
+			<p id="p2"></p>
+			<p id="p3"></p>
+			<p id="p4"></p>
+			<section>This is regualr content continuing after the paragraph boxes.</section>
+		</div>
+		<a href="index.html" title="Home Page">Go&nbsp;Back</a>
+		<footer>
+			<hr>
+			<h4 style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support: yeah.right@server-is-down.com</h4>
+		</footer>
+	</body>
+</html>
